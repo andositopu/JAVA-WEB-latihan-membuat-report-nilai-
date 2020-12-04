@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportnilai" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e1260a16-495b-4085-a764-f5a9cbad02d1">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from nilai]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tglnilai" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nim" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kodemk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilai" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="35" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="81a2c90c-ca4e-4b31-afda-bf856d12fe33" x="226" y="5" width="258" height="30"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[LAPORAN DATA NILAI]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8c9482f3-9c2a-4a33-b34b-3701b16d7ad1" x="0" y="2" width="45" height="20"/>
+				<textElement/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4bd67ae2-bfed-4d66-ab49-76d9ada85bfd" x="110" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[tglnilai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0a7e4f4d-cf0a-4e0f-8a35-e22ceb52ee14" x="257" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[nim]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e0acd055-199a-4fd3-a472-a31d50899e97" x="400" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[kodemk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0474cda8-e40f-4292-9a08-d1325014ee68" x="540" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[nilai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="60fe1caf-45b4-442e-92e2-95fdba0ad3f5" x="682" y="2" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[keterangan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<textField>
+				<reportElement uuid="e56469f2-0068-4b40-b2cb-0cf5f086ca24" x="0" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2df508c1-771b-4ab9-900b-ae6792c85d81" x="126" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{tglnilai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6bfc7612-88e3-4b49-8fc9-5472db6c51ac" x="257" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4a8dd390-9d6d-45dd-9cf5-cf7feab09dd4" x="390" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{kodemk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0c74d321-7448-4a38-985f-3da4c5f7d24e" x="540" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nilai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2d64c60b-cc28-44ec-ab4f-720c8dc7f5a6" x="682" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{keterangan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="19" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="15" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>
